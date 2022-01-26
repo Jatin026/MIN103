@@ -1,0 +1,1 @@
+cout<<"The argument is :"<<-acos(-1)+argument;
