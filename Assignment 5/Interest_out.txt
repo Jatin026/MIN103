@@ -1,0 +1,6 @@
+The Simple Interest after 5 years  at 7% is Rs 350
+The Simple Interest after 10 years at 7% is Rs 700
+The Simple Interest after 15 years at 7% is Rs 1050
+The Compound Interest after 5 years  at 7% is Rs 402.552
+The Compound Interest after 10 years at 7% is Rs 967.152
+The Compound Interest after 15 years at 7% is Rs 1759.03

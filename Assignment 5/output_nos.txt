@@ -1,0 +1,6 @@
+The Sum of Positive numbers is :35
+The Count of Positive numbers is :5
+The Average of Positive numbers is :7
+The Sum of Negative numbers is :-100
+The Count of Negative numbers is :10
+The Average of Negative numbers is :-10
