@@ -21,10 +21,10 @@ struct Book{
     }
 };
 void sort(Book b[]){
-    for (int i = 0; i < 2; i++)
+    for (int i = 0; i < 19; i++)
     {
         int min_index=i;
-        for (int j = i+1; j<3; j++)
+        for (int j = i+1; j<20; j++)
         {
             if(b[min_index].date[2]>b[j].date[2]) {
                 min_index=j;
@@ -58,12 +58,13 @@ int main(){
     sort(b);
     cout<<"............20 Entries Exhausted.......\n";
     string s;
-    cout<<"If you want to quit pls type quit\n";
+    cout<<"If you want to quit pls type quit and if you want to continue type anything\n";
     cin>>s;
     while(s!="quit"){
         cout<<"Please enter your entry \n";
         b[0].input();
         sort(b);
+        cin>>s;
     }
     show(b);
     return 0;
