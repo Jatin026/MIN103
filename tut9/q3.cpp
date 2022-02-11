@@ -60,10 +60,9 @@ int main(){
     string s;
     cout<<"If you want to quit pls type quit\n";
     cin>>s;
-    int i=0;
     while(s!="quit"){
         cout<<"Please enter your entry \n";
-        b[19].input();
+        b[0].input();
         sort(b);
     }
     show(b);
