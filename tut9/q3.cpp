@@ -1,17 +1,17 @@
 #include<bits/stdc++.h>
 using namespace std;
 struct Book{
-    string author;
+    string author,title;
     int price,date[3]; //date->day, month, year
     void input(){
-        cin>>author>>price;
+        cin>>author>>title>>price;
         for (int i = 0; i < 3; i++)
         {
             cin>>date[i];
         }  
     }
     void display(){
-        cout<<author<<"  "<<price<<"\n";
+        cout<<"Author : "<<author<<"  Title: "<<title<<"  Price:"<<price<<"\n";
         for (int i = 0; i < 3; i++)
         {
             cout<<date[i];
