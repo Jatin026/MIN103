@@ -8,13 +8,15 @@ class Room{
             breadth=b;
             height=h;
         }
-        int area(){
-            return (2*length*breadth+2*breadth*height+2*height*length);
-        }
-        int volume(){
+        int area();
+        int volume();
+};
+int Room :: volume(){
             return (length*breadth*height);
         }
-};
+int Room :: area(){
+            return (2*length*breadth+2*breadth*height+2*height*length);
+        }
 int main(){
     int x,y,z;
     cin>>x>>y>>z;
