@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 class vector{
-    int size;
+    int size=0;
     int *v=new int [size];
     public:
         vector(int vec_size);
@@ -17,9 +17,9 @@ class vector{
             delete[] v;
         }
         vector operator = (vector &v2){
-            for (int i = 0; i < v2.size; i++)
+            for (int i = 0; i < size; i++)
             {
-                *(v+i)=*(v2.v+i);
+                *(v2.v+i)=*(v+i);
             }
 }
 };
@@ -36,6 +36,7 @@ vector :: vector(vector &v2){
             }
 }
 void vector :: show(){
+    cout<<"..........OUTPUT..........\n";
     for (int i = 0; i < size; i++)
             {
                 cout<<*(v+i)<<" ";
@@ -43,5 +44,9 @@ void vector :: show(){
 }
 int main(){
     vector vec(5);
+    vec.input();
+    vec.show();
+    vector v2=(vec);
+    v2.show();
     return 0;
 }
