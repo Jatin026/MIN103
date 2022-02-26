@@ -72,7 +72,15 @@ class Circle{
 
 };
 int main(){
-    Complex c1(5,3);
+    Complex c1(5,3),c2,c3(1,1);
+    ++c1;
+    cout<<c1<<"\n";
+    --c1;
+    cout<<c1<<"\n";
+    -c1;
+    cout<<c1<<"\n";
+    cout<<(c1||c2)<<"\n";
+    cout<<(c1-c3)<<"\n";
     Circle c(c1,5);
     c.display();
     return 0;
